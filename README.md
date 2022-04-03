@@ -51,7 +51,6 @@ There are 4 files in this repository. <br>
 
 ## Instructions <a name="How-To-Run-This-Project"></a>
 * Execute the codes in this notebook and follow along the insights to understand the decisions made throughout the process.
-* The main findings and results of this project can be found in this [post](https://medium.com/@nguyenpham111/tips-to-improve-conversion-rate-for-online-educational-providers-fd84c9a43226)
 
 ## Licensing, Authors, Acknowledgements <a name="License"></a>
 * Starbucks for providing the datasets, instructions, and project goal
