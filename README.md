@@ -4,6 +4,8 @@
 - [Installation](#Installation)
 - [File Descriptions](#File-Descriptions)
 - [Instructions](#How-To-Run-This-Project)
+- [Results](#Results)
+- [Discussion](#Discussion)
 - [Licensing, Authors, Acknowledgements](#License)
 
 ## Project Goal <a name="Project-Goal"></a>
@@ -52,8 +54,28 @@ There are 4 files in this repository. <br>
 ## Instructions <a name="How-To-Run-This-Project"></a>
 * Execute the codes in this notebook and follow along the insights to understand the decisions made throughout the process.
 
+## Results <a name="Results"></a>
+- The best Promotion strategy is the custome model whose metrics are: IRR = 0.0212 , NIR = 266.85
+- The practical and best ML Promotion strategy utilizes XGBoost. This model produces IRR 0.0256, NIR = 87.15
+
+## Discussion <a name="Discussion"></a>
+### 1. Dataset distribution
+This dataset is highly imbalanced. The amount of customers not making purchases are much more than thoes do. For this reason, standard ML algorithms running directly on the given data set will have a tendency to assign No-Promotion to all customers than trying to classify. 
+
+SMOTE method was applied to resample and balance the data set.
+
+### 2. Model choices
+The jupyter notebook `Startbucks Promotion Strategy_NP` entails two approaches.
+- First approach is a custom strategy which targets specific features. If statisfies, the user will receive the promotion. This approach only works if there is a managable amount of features
+- Second approach is applying a ML model. I compared the performance of 3 models: Logistic regression, Balanaced random forest classifier, and XGBoost.
+
+### 3. Suggestions
+The following suggestions can improve the model: <br>
+a. A more balanced data set<br>
+b. Or other classifiers for imbalanced data set
+
 ## Licensing, Authors, Acknowledgements <a name="License"></a>
-* Starbucks for providing the datasets, instructions, and project goal
-* [Udacity](https://www.udacity.com/)
+* Starbucks for providing the datasets and project goal
+* [Udacity](https://www.udacity.com/) for instructions
 * Author: [Nguyen Pham](https://github.com/Az-otrope)
 
