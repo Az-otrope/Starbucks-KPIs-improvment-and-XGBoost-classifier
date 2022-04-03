@@ -44,12 +44,11 @@ The following packages and versions are used in this jupyter notebook. Any newer
 | xgboost | 1.5.2  |
 
 ## File Description <a name="File-Descriptions"></a>
-There are 4 files in this repository. <br>
+There are 5 files in this repository. <br>
 1. Two original training and test datasets are provided in `.csv` files <br>
-2. An original assignment in `.dox` 
-3. A jupyter notebook `.ipynb` includes the process of reading in, preprocessing, and modeling the dataset. <br>
-4. A test `.py` file provided by Udacity
-5. A README.md file as a brief look at this repository.
+2. A jupyter notebook `.ipynb` includes the process of reading in, preprocessing, and modeling the dataset. <br>
+3. A test `.py` file provided by Udacity
+4. A README.md file as a brief look at this repository.
 
 ## Instructions <a name="How-To-Run-This-Project"></a>
 * Execute the codes in this notebook and follow along the insights to understand the decisions made throughout the process.
