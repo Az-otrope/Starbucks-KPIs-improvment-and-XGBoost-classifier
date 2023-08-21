@@ -33,6 +33,7 @@ The goal of this project is to create a model that gives promotions to users bas
 
 ![invariant](img/invariant_metric_hypo.png)<br>
 
+**Evaluation metrics**: a hypothesis testing to evaluate whether promotions gives a positive impact on increasing the IRR and NIR
 ![kpi](img/evaluation_metric_hypo.png)<br>
 
 ### Part 2: Build a Model 
