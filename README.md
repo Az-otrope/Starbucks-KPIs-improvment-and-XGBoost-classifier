@@ -19,11 +19,9 @@ The goal of this project is to create a model that gives promotions to users bas
 2. Maximize the metrics: <br>
    a. Incremental Response Rate (IRR): depicts how many more customers purchased the product with the promotion, as compared to if they didn't receive the promotion.<br>
    ![irr](img/irr.png)<br>
-   Figure 1. Incremental Response Rate (IRR) equation.
    
    b. Net Incremental Revenue (NIR): depicts how much is made (or lost) by sending out the promotion.<br>
    ![nir](img/nir.png)<br>
-   Figure 2. Net Incremental Revenue (NIR) equation.
 
 ## Project Pathway <a name="Pathway"></a>
 ### Part 1: Hypothesis Testing 
@@ -33,11 +31,9 @@ The goal of this project is to create a model that gives promotions to users bas
 
 **Invariant metric**: to test whether there is a statistically significant difference between the 2 groups' size.
 
-![invariant](img/invarian_metric_hypo.png)<br>
-Figure 3. Hypothesis testing on the invariant metric to see if the number of customers in the control group is the same as in the treated group.
+![invariant](img/invariant_metric_hypo.png)<br>
 
 ![kpi](img/evaluation_metric_hypo.png)<br>
-Figure 4. Hypothesis testing on the IRR and NIR metrics to see if giving out promotions makes a positive impact.
 
 ### Part 2: Build a Model 
 - Select customers whose features (V1 - V7) will maximize the IRR and NIR, and give them the Promotion code (Treatment)
@@ -76,7 +72,7 @@ There are 5 files in this repository. <br>
 ### 1. Dataset distribution
 
 ![distribution](img/promotion_dist.png)<br>
-Figure 5. The distribution of control (no promotion) and treated (received promotion) groups with regard to customer's purchase. 
+Figure 1. The distribution of control (no promotion) and treated (received promotion) groups with regard to customer's purchase. 
 
 This dataset is highly imbalanced. The number of customers not making purchases are much more than those who do, regardless of whether they receive promotional offers or not. For this reason, standard ML algorithms applying to the given data set will have a tendency to assign No-Promotion to all customers than trying to classify. 
 
