@@ -1,9 +1,6 @@
 # Starbucks-Promotion-Strategy
 - [Project Goal](#Project-Goal)
-- [Project Pathway](#Pathway)
-- [Installation](#Installation)
-- [File Descriptions](#File-Descriptions)
-- [Instructions](#How-To-Run-This-Project)
+- [Project Workflow](#Pathway)
 - [Results](#Results)
 - [Discussion](#Discussion)
 - [Licensing, Authors, Acknowledgements](#License)
@@ -11,7 +8,7 @@
 ## Project Goal <a name="Project-Goal"></a>
 The goal of this project is to create a model that gives promotions to users based on their features' patterns. Specifically, the goal is to maximize the two metrics: Incremental Response Rate (IRR) and Net Incremental Revenue (NIR)
 
-**Background:** The dataset provided in this portfolio exercise was originally used as a take-home assignment provided by Starbucks for their job candidates. The data for this exercise consists of about 120,000 data points split in a 2:1 ratio between training and test files. In the experiment simulated by the data, an advertising promotion was tested to see if it would bring more customers to purchase a specific product priced at $10. Since it costs the company 0.15 to send out each promotion, it would be best to limit that promotion only to those that are most receptive to the promotion. Each data point includes one column indicating whether or not an individual was sent a promotion for the product, and one column indicating whether or not that individual eventually purchased that product. Each individual also has seven additional features associated with them, which are provided abstractly as V1-V7.
+**Background:** The dataset provided in this portfolio exercise was originally used as a take-home assignment provided by Starbucks for their job candidates. The data for this exercise consists of about 120,000 data points split in a 2:1 ratio between training and test files. In the experiment simulated by the data, an advertising promotion was tested to see if it would bring more customers to purchase a specific product priced at $10. Since it costs the company 0.15 to send out each promotion, it would be best to limit that promotion only to those who are most receptive to the promotion. Each data point includes one column indicating whether or not an individual was sent a promotion for the product, and one column indicating whether or not that individual eventually purchased that product. Each individual also has seven additional features associated with them, which are provided abstractly as V1-V7.
 
 
 **The tasks** 
@@ -23,7 +20,7 @@ The goal of this project is to create a model that gives promotions to users bas
    b. Net Incremental Revenue (NIR): depicts how much is made (or lost) by sending out the promotion.<br>
    ![nir](img/nir.png)<br>
 
-## Project Pathway <a name="Pathway"></a>
+## Project Workflow <a name="Pathway"></a>
 ### Part 1: Hypothesis Testing 
 - The experiment was conducted and labeled results were collected. I analyze the results to see if giving out promotions helps with IRR and NIR
 - Analyze is done by calculating the two KPIs (IRR, NIR) generated after the experiment.
@@ -33,33 +30,13 @@ The goal of this project is to create a model that gives promotions to users bas
 
 ![invariant](img/invariant_metric_hypo.png)<br>
 
-**Evaluation metrics**: a hypothesis testing to evaluate whether promotions gives a positive impact on increasing the IRR and NIR
+**Evaluation metrics**: a hypothesis testing to evaluate whether promotions have a positive impact on increasing the IRR and NIR
+
 ![kpi](img/evaluation_metric_hypo.png)<br>
 
 ### Part 2: Build a Model 
 - Select customers whose features (V1 - V7) will maximize the IRR and NIR, and give them the Promotion code (Treatment)
 - This is a Feature Selection problem
-
-## Installation <a name="Installation"></a>
-The following packages and versions are used in this notebook. Any newer versions should work. 
-| Package  | Version |
-| ------------- | ------------- |
-| Python  | 3.8.5  |
-| Pandas  | 1.1.3  |
-| Numpy   | 1.19.2 |
-| Matplotlib | 3.3.2|
-| imblearn   | 0.0  |
-| xgboost | 1.5.2  |
-
-## File Description <a name="File-Descriptions"></a>
-There are 5 files in this repository. <br>
-1. Two original training and test datasets are provided in `.csv` files <br>
-2. A Jupyter notebook `.ipynb` includes the process of reading in, preprocessing, and modeling the dataset. <br>
-3. A test `.py` file provided by Udacity
-4. A README.md file as a brief look at this repository.
-
-## Instructions <a name="How-To-Run-This-Project"></a>
-* Execute the codes in this notebook and follow along with the insights to understand the decisions made throughout the process.
 
 ## Conclusions and Results <a name="Results"></a>
 ### Hypothesis testing
